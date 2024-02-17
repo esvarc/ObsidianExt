@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "description": {
+      "text": "${mod_name}: Stairs, slab, button, fence and wall made from obsidian blocks."
+    },
+    "pack_format": 15
+  }
+}
