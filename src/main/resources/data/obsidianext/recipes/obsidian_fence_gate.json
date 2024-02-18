@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "fence_gate",
+  "key": {
+    "W": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "W W",
+    "WWW"
+  ],
+  "result": {
+    "count": 5,
+    "item": "obsidianext:obsidian_fence_gate"
+  },
+  "show_notification": true
+}

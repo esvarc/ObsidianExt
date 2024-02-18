@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+     "item": "minecraft:obsidian"
+  },
+  "result": "obsidianext:obsidian_door",
+  "group": "iron_door",
+  "count": 1
+}

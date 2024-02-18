@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "iron_door",
+  "key": {
+    "#": {
+      "item": "minectaft:obsidian"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 6,
+    "item": "obsididanext:obsidian_door"
+  },
+  "show_notification": true
+}

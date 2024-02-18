@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fences",
+  "key": {
+    "W": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "W W"
+  ],
+  "result": {
+    "count": 5,
+    "item": "obsidianext:obsidian_fence"
+  },
+  "show_notification": true
+}
