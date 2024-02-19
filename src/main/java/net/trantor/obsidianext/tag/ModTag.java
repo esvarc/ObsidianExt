@@ -10,11 +10,11 @@ import net.trantor.obsidianext.ObsidianExt;
 
 public class ModTag {
 	public static class Blocks {
-		public static final TagKey<Block> OBSIDIAN_BLOCKS = tag("obsidian_blocks");
+		public static final TagKey<Block> OBSIDIAN_BLOCKS = tag("obsidian_unused");
 		private static TagKey<Block> tag(String name) { return BlockTags.create(new ResourceLocation(ObsidianExt.MOD_ID,name)); }
 	}
 	public static class Items {
-
+		public static final TagKey<Item> OBSIDIAN_ITEMS = tag("obsidian_blocks");
 		private static TagKey<Item> tag(String name) { return ItemTags.create(new ResourceLocation(ObsidianExt.MOD_ID, name)); }
 	}
 }

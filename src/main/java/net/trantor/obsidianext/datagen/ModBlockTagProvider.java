@@ -18,7 +18,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 	}
 	@Override
 	protected void addTags(HolderLookup.@NotNull Provider pProvider) {
-		this.tag(ModTag.Blocks.OBSIDIAN_BLOCKS)
+		/* this.tag(ModTag.Blocks.OBSIDIAN_BLOCKS)
 			.add(ModBlocks.OBSIDIAN_DOOR.get(),
 			  ModBlocks.OBSIDIAN_BUTTON.get(),
 				ModBlocks.OBSIDIAN_FENCE.get(),
@@ -27,6 +27,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 				ModBlocks.OBSIDIAN_STAIRS.get(),
 				ModBlocks.OBSIDIAN_TRAPDOOR.get(),
 				ModBlocks.OBSIDIAN_WALL.get());
+		 */
 		this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
 			.add(ModBlocks.OBSIDIAN_DOOR.get(),
 				ModBlocks.OBSIDIAN_BUTTON.get(),
@@ -42,5 +43,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 			.add(ModBlocks.OBSIDIAN_FENCE_GATE.get());
 		this.tag(BlockTags.WALLS)
 			.add(ModBlocks.OBSIDIAN_WALL.get());
+		this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+			.add(ModBlocks.OBSIDIAN_DOOR.get(),
+				ModBlocks.OBSIDIAN_BUTTON.get(),
+				ModBlocks.OBSIDIAN_FENCE.get(),
+				ModBlocks.OBSIDIAN_FENCE_GATE.get(),
+				ModBlocks.OBSIDIAN_SLAB.get(),
+				ModBlocks.OBSIDIAN_STAIRS.get(),
+				ModBlocks.OBSIDIAN_TRAPDOOR.get(),
+				ModBlocks.OBSIDIAN_WALL.get());
 	}
 }

@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:obsidian"
-  },
-  "result": "obsidianext:obsidian_fence_gate",
-  "group": "fence_gate",
-  "count": 1
-}

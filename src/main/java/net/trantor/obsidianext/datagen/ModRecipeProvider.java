@@ -27,7 +27,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 			.unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
 			.group("buttons")
 			.save(pWriter);
-		stonecutterResultFromBase(pWriter,RecipeCategory.REDSTONE,ModBlocks.OBSIDIAN_BUTTON.get(),Blocks.OBSIDIAN);
+		stonecutterResultFromBase(pWriter, RecipeCategory.REDSTONE, ModBlocks.OBSIDIAN_BUTTON.get(), Blocks.OBSIDIAN);
 		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_DOOR.get(),6)
 			.pattern("OO ")
 			.pattern("OO ")
@@ -35,7 +35,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 			.define('O', Blocks.OBSIDIAN)
 			.unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
 			.save(pWriter);
-		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.OBSIDIAN_DOOR.get(),Blocks.OBSIDIAN, 2);
+		stonecutterResultFromBase(pWriter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_DOOR.get(), Blocks.OBSIDIAN, 2);
 		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_FENCE.get(),5)
 			.pattern("OOO")
 			.pattern("O O")
@@ -43,7 +43,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 			.define('O', Blocks.OBSIDIAN)
 			.unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
 			.save(pWriter);
-		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.OBSIDIAN_FENCE.get(),Blocks.OBSIDIAN);
+		stonecutterResultFromBase(pWriter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_FENCE.get(), Blocks.OBSIDIAN);
 		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_FENCE_GATE.get(),5)
 			.pattern("O O")
 			.pattern("OOO")
@@ -51,47 +51,39 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 			.define('O', Blocks.OBSIDIAN)
 			.unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
 			.save(pWriter);
-		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.OBSIDIAN_FENCE_GATE.get(),Blocks.OBSIDIAN);
-		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_FENCE_GATE.get(),5)
-			.pattern("O O")
-			.pattern("OOO")
-			.pattern("   ")
-			.define('O', Blocks.OBSIDIAN)
-			.unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
-			.save(pWriter);
-		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.OBSIDIAN_FENCE_GATE.get(),Blocks.OBSIDIAN);
-		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.OBSIDIAN_SLAB.get(),6)
+		stonecutterResultFromBase(pWriter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_FENCE_GATE.get(), Blocks.OBSIDIAN);
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_SLAB.get(),6)
 			.pattern("OOO")
 			.pattern("   ")
 			.pattern("   ")
 			.define('O', Blocks.OBSIDIAN)
 			.unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
 			.save(pWriter);
-		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.OBSIDIAN_SLAB.get(),Blocks.OBSIDIAN, 2);
-		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.OBSIDIAN_STAIRS.get(),6)
+		stonecutterResultFromBase(pWriter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_SLAB.get(), Blocks.OBSIDIAN, 2);
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_STAIRS.get(),6)
 			.pattern("O  ")
 			.pattern("OO ")
 			.pattern("OOO")
 			.define('O', Blocks.OBSIDIAN)
 			.unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
 			.save(pWriter);
-		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.OBSIDIAN_STAIRS.get(),Blocks.OBSIDIAN);
-		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.OBSIDIAN_TRAPDOOR.get(),4)
+		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_STAIRS.get(),Blocks.OBSIDIAN);
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_TRAPDOOR.get(),4)
 			.pattern("OO ")
 			.pattern("OO ")
 			.pattern("   ")
 			.define('O', Blocks.OBSIDIAN)
 			.unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
 			.save(pWriter);
-		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.OBSIDIAN_TRAPDOOR.get(),Blocks.OBSIDIAN);
-		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.OBSIDIAN_WALL.get(),6)
+		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_TRAPDOOR.get(),Blocks.OBSIDIAN);
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_WALL.get(),6)
 			.pattern("   ")
 			.pattern("OOO")
 			.pattern("OOO")
 			.define('O', Blocks.OBSIDIAN)
 			.unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
 			.save(pWriter);
-		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.OBSIDIAN_WALL.get(),Blocks.OBSIDIAN);
+		stonecutterResultFromBase(pWriter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_WALL.get(),Blocks.OBSIDIAN);
 	}
 
 	protected static void oreSmelting(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, @NotNull RecipeCategory pCategory, @NotNull ItemLike pResult, float pExperience, int pCookingTIme, @NotNull String pGroup) {
