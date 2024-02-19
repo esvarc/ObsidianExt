@@ -13,7 +13,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.trantor.obsidianext.ObsidianExt;
 import net.trantor.obsidianext.item.ModItems;
 
-import javax.swing.*;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -29,11 +28,9 @@ public class ModBlocks {
 	public static final RegistryObject<Block> OBSIDIAN_WALL = registerBlock("obsidian_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).explosionResistance(1f)));
 	private static  <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
 		RegistryObject<T> toReturn = BLOCKS.register(name, block);
-		registerBlockItem(name,toReturn);
+		ModItems.ITEMS.register(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
 		return toReturn;
 	}
-	private static  <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-		return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-	}
-	public static void register(IEventBus eventBus) { BLOCKS.register(eventBus); 	}
+
+	public static void register(IEventBus eventBus) { BLOCKS.register(eventBus); }
 }

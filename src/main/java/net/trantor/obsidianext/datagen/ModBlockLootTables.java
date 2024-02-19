@@ -12,6 +12,7 @@ import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.trantor.obsidianext.block.ModBlocks;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
 
@@ -38,9 +39,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 					.apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
 					.apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
 	}
-
 	@Override
-	protected Iterable<Block> getKnownBlocks() {
+	protected @NotNull Iterable<Block> getKnownBlocks() {
 		return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
 	}
 }

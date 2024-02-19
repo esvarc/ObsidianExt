@@ -7,6 +7,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.trantor.obsidianext.ObsidianExt;
 import net.trantor.obsidianext.block.ModBlocks;
 import net.trantor.obsidianext.tag.ModTag;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -16,7 +17,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 		super(output, lookupProvider, ObsidianExt.MOD_ID, existingFileHelper);
 	}
 	@Override
-	protected void addTags(HolderLookup.Provider pProvider) {
+	protected void addTags(HolderLookup.@NotNull Provider pProvider) {
 		this.tag(ModTag.Blocks.OBSIDIAN_BLOCKS)
 			.add(ModBlocks.OBSIDIAN_DOOR.get(),
 			  ModBlocks.OBSIDIAN_BUTTON.get(),
