@@ -1,4 +1,4 @@
-package net.trantor.obsidianext.datagen.loot;
+package net.trantor.obsidianext.datagen;
 
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
