@@ -28,6 +28,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 		this.dropSelf(ModBlocks.OBSIDIAN_TRAPDOOR.get());
 		this.dropSelf(ModBlocks.OBSIDIAN_FENCE.get());
 		this.dropSelf(ModBlocks.OBSIDIAN_FENCE_GATE.get());
+		this.dropSelf(ModBlocks.OBSIDIAN_PRESSURE_PLATE.get());
 		this.dropSelf(ModBlocks.OBSIDIAN_WALL.get());
 		this.add(ModBlocks.OBSIDIAN_SLAB.get(), block -> createSlabItemTable(ModBlocks.OBSIDIAN_SLAB.get()));
 		this.add(ModBlocks.OBSIDIAN_DOOR.get(), block -> createDoorTable(ModBlocks.OBSIDIAN_DOOR.get()));

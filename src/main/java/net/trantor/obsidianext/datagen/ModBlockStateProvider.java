@@ -17,6 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		buttonBlock(((ButtonBlock) ModBlocks.OBSIDIAN_BUTTON.get()), blockTexture(Blocks.OBSIDIAN));
 		fenceBlock(((FenceBlock) ModBlocks.OBSIDIAN_FENCE.get()), blockTexture(Blocks.OBSIDIAN));
 		fenceGateBlock(((FenceGateBlock) ModBlocks.OBSIDIAN_FENCE_GATE.get()), blockTexture(Blocks.OBSIDIAN));
+		pressurePlateBlock((PressurePlateBlock) ModBlocks.OBSIDIAN_PRESSURE_PLATE.get(), blockTexture(Blocks.OBSIDIAN));
 		wallBlock(((WallBlock) ModBlocks.OBSIDIAN_WALL.get()), blockTexture(Blocks.OBSIDIAN));
 		doorBlockWithRenderType(((DoorBlock) ModBlocks.OBSIDIAN_DOOR.get()), modLoc("block/obsidian_door_bottom"), modLoc("block/obsidian_door_top"), "cutout");
 		trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.OBSIDIAN_TRAPDOOR.get()), modLoc("block/obsidian_trapdoor"), true, "cutout");

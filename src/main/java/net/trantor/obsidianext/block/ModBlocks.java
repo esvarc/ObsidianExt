@@ -21,7 +21,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> OBSIDIAN_DOOR = registerBlock("obsidian_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).noOcclusion() ,BlockSetType.IRON));
 	public static final RegistryObject<Block> OBSIDIAN_FENCE = registerBlock("obsidian_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN)));
 	public static final RegistryObject<Block> OBSIDIAN_FENCE_GATE = registerBlock("obsidian_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN),SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
-
+	public static final RegistryObject<Block> OBSIDIAN_PRESSURE_PLATE = registerBlock("obsidian_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OBSIDIAN), BlockSetType.IRON));
 	public static final RegistryObject<Block> OBSIDIAN_SLAB = registerBlock("obsidian_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN)));
 	public static final RegistryObject<Block> OBSIDIAN_STAIRS = registerBlock("obsidian_stairs", () -> new StairBlock(Blocks.OBSIDIAN::defaultBlockState,BlockBehaviour.Properties.copy(Blocks.OBSIDIAN)));
 	public static final RegistryObject<Block> OBSIDIAN_TRAPDOOR = registerBlock("obsidian_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).noOcclusion(),BlockSetType.IRON));
@@ -31,6 +31,5 @@ public class ModBlocks {
 		ModItems.ITEMS.register(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
 		return toReturn;
 	}
-
 	public static void register(IEventBus eventBus) { BLOCKS.register(eventBus); }
 }

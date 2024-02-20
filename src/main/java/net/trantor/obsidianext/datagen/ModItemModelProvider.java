@@ -29,6 +29,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		evenSimplerBlockItem(ModBlocks.OBSIDIAN_STAIRS);
 		evenSimplerBlockItem(ModBlocks.OBSIDIAN_SLAB);
 		evenSimplerBlockItem(ModBlocks.OBSIDIAN_FENCE_GATE);
+		evenSimplerBlockItem(ModBlocks.OBSIDIAN_PRESSURE_PLATE);
 		trapdoorItem(ModBlocks.OBSIDIAN_TRAPDOOR);
 	}
 

@@ -27,16 +27,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
 	protected void addTags(HolderLookup.@NotNull Provider pProvider) {
 		this.tag(ModTag.Items.OBSIDIAN_ITEMS)
 			.add(byBlock(ModBlocks.OBSIDIAN_BUTTON.get()),
-				byBlock(ModBlocks.OBSIDIAN_BUTTON.get()),
 				byBlock(ModBlocks.OBSIDIAN_FENCE.get()),
 				byBlock(ModBlocks.OBSIDIAN_FENCE_GATE.get()),
+				byBlock(ModBlocks.OBSIDIAN_PRESSURE_PLATE.get()),
 				byBlock(ModBlocks.OBSIDIAN_SLAB.get()),
 				byBlock(ModBlocks.OBSIDIAN_STAIRS.get()),
 				byBlock(ModBlocks.OBSIDIAN_TRAPDOOR.get()),
 				byBlock(ModBlocks.OBSIDIAN_WALL.get()));
 	}
 	public static Item byBlock(Block pBlock) {
-		return (Item)BY_BLOCK.getOrDefault(pBlock, Items.AIR);
+		return BY_BLOCK.getOrDefault(pBlock, Items.AIR);
 	}
 
 }

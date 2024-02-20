@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
 				output.accept(ModBlocks.OBSIDIAN_FENCE.get());
 				output.accept(ModBlocks.OBSIDIAN_FENCE_GATE.get());
 				output.accept(ModBlocks.OBSIDIAN_DOOR.get());
+				output.accept(ModBlocks.OBSIDIAN_PRESSURE_PLATE.get());
 				output.accept(ModBlocks.OBSIDIAN_SLAB.get());
 				output.accept(ModBlocks.OBSIDIAN_STAIRS.get());
 				output.accept(ModBlocks.OBSIDIAN_TRAPDOOR.get());
