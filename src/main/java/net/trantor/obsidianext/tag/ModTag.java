@@ -1,5 +1,4 @@
 package net.trantor.obsidianext.tag;
-
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
