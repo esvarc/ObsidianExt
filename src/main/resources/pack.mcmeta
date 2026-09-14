@@ -3,6 +3,6 @@
     "description": {
       "text": "${mod_name}: Stairs, slab, button, fence and wall made from obsidian blocks."
     },
-    "pack_format": 15
+    "pack_format": 14, "supported_formats": {"min_inclusive": 4, "max_inclusive": 999}
   }
 }
