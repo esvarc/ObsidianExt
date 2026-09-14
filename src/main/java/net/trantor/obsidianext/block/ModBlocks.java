@@ -12,7 +12,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.trantor.obsidianext.ObsidianExt;
 import net.trantor.obsidianext.item.ModItems;
-
 import java.util.function.Supplier;
 
 public class ModBlocks {
